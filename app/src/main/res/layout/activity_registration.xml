@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hot_blue"
+    android:gravity="center"
+    android:padding="1dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="20dp"
+    tools:context=".LoginActivitys.RegistrationActivity">
+
+
+    <ScrollView
+        android:id="@+id/LL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tap Image to set new profile pic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivProfile2"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/circle" />
+
+            </LinearLayout>
+            <!--    User Name        -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:shadowColor="#3D5AFE"
+                android:text="Enter your name  "
+                android:textColor="#2CA7E0" />
+
+            <EditText
+                android:id="@+id/etUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit"
+                android:ems="10"
+                android:hint="First name"
+                android:inputType="textPersonName"
+                android:maxLength="15"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/etUserNameError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="..."
+                android:textColor="#FFD600" />
+            <!--    User Name2        -->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:padding="10dp"-->
+            <!--                android:shadowColor="#3D5AFE"-->
+            <!--                android:text="Enter your sir name"-->
+            <!--                android:textColor="#2CA7E0" />-->
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/etUserName2"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:background="@drawable/edit"-->
+            <!--                android:ems="10"-->
+            <!--                android:hint="Sir name"-->
+            <!--                android:inputType="textPersonName"-->
+            <!--                android:maxLength="15"-->
+            <!--                android:padding="10dp" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/etUserNameError2"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:paddingLeft="10dp"-->
+            <!--                android:text="..."-->
+            <!--                android:textColor="#FFD600" />-->
+            <!--    User Phone Number        -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:shadowColor="#3D5AFE"
+                android:text="Phone number       "
+                android:textColor="#2CA7E0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:paddingTop="10dp"
+                    android:shadowColor="#2CA7E0"
+                    android:text="+91"
+                    android:textColor="#2CA7E0" />
+
+
+                <EditText
+                    android:id="@+id/etAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit"
+                    android:ems="10"
+                    android:hint="e.g 9669254852"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:padding="10dp"
+                    android:paddingTop="10dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/etPhoneNumberError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:text="..."
+                android:textColor="#FFD600" />
+
+            <!--    User Email ID        -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:shadowColor="#3D5AFE"
+                android:text="Email ID"
+                android:textColor="#2CA7E0" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit"
+                android:ems="10"
+                android:hint="e.g somting@something.com"
+                android:inputType="textEmailAddress"
+                android:maxLength="64"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/etEmailError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="..."
+                android:textColor="#FFD600" />
+
+            <!--    User Password        -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:shadowColor="#3D5AFE"
+                android:text="Password"
+                android:textColor="#2CA7E0" />
+
+            <EditText
+                android:id="@+id/etUserPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit"
+                android:ems="10"
+                android:hint="********"
+                android:inputType="textPassword"
+                android:maxLength="10"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/etUserPasswordError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="..."
+                android:textColor="#FFD600" />
+
+            <!--    User Confirm Password        -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:shadowColor="#3D5AFE"
+                android:text="Confim Password"
+                android:textColor="#2CA7E0" />
+
+            <EditText
+                android:id="@+id/etConfirmPassWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit"
+                android:ems="10"
+                android:hint="********"
+                android:inputType="textPassword"
+                android:maxLength="10"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/etConfirmPassWordError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="..."
+                android:textColor="#FFD600" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="                 " />
+
+            <Button
+                android:id="@+id/btnRegister2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="Rigister"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="                 " />
+
+            <Button
+                android:id="@+id/gotologin2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/secondary_button"
+                android:gravity="center"
+                android:padding="10dp"
+                android:shadowColor="#3D5AFE"
+                android:text="Login"
+                android:textColor="#2CA7E0"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="                 " />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

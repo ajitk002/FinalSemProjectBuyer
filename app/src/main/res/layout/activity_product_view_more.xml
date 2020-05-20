@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navy_blue"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--product_ID-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Product ID"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:textColor="@color/whiteTransparentHalf"
+                    android:id="@+id/tv_product_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Product ID" />
+            </LinearLayout>
+            <!--            &lt;!&ndash;            product name&ndash;&gt;-->
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:padding="10dp"-->
+            <!--                    android:text="Product Name"-->
+            <!--                    android:textColor="#ffffff" />-->
+
+            <!--                <TextView-->
+            <!--                    android:textColor="@color/whiteTransparentHalf"-->
+            <!--                    android:id="@+id/tv_productName"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:padding="10dp"-->
+            <!--                    android:text="Redmi 4" />-->
+            <!--            </LinearLayout>-->
+
+            <!--product_seller_image-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_image_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+                <ImageView
+                    android:id="@+id/civ_product_seller_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:src="@drawable/common_google_signin_btn_text_light_normal" />
+            </LinearLayout>
+
+            <!--product_name-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Product Name"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_productName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Name of the product"
+                    android:textColor="#64DD17" />
+            </LinearLayout>
+
+            <!--product_condition-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Product Condition"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:textColor="@color/whiteTransparentHalf"
+                    android:id="@+id/tv_product_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Product Condition" />
+            </LinearLayout>
+
+            <!--Product useage duration-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Useage Duration"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:textColor="@color/whiteTransparentHalf"
+                    android:id="@+id/tv_product_original_date_of_purchase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Original Date of purchase" />
+            </LinearLayout>
+
+            <!--product_company-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Company"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_product_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Company"
+                    android:textColor="#64DD17" />
+            </LinearLayout>
+
+            <!--product_categories-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Categories"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_product_categories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Product Categories"
+                    android:textColor="#64DD17" />
+            </LinearLayout>
+
+            <!--product_description-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Product Description"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:textColor="@color/whiteTransparentHalf"
+                    android:id="@+id/tv_product_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Product Description" />
+            </LinearLayout>
+
+            <!--product_address-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Address"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:textColor="@color/whiteTransparentHalf"
+                    android:id="@+id/tv_product_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Product Address" />
+            </LinearLayout>
+
+            <!--product_payment_mode-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Payment mode"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:textColor="@color/whiteTransparentHalf"
+                    android:id="@+id/tv_product_payment_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Payment Mode" />
+            </LinearLayout>
+
+            <!--product_location_longitude-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Product Name"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_product_location_longitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="GPS longitude" />
+            </LinearLayout>
+
+            <!--product_location_latitude-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Product Name"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_product_location_latitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="GPS latitude" />
+            </LinearLayout>
+
+            <!--product_price-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Price"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_product_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Price of the product"
+                    android:textColor="#FFD600" />
+            </LinearLayout>
+
+            <!--product_pick_up_date-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Product Pick up date"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_product_pick_up_date"
+                    android:textColor="@color/whiteTransparentHalf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Pick up date" />
+            </LinearLayout>
+
+            <!--product_date_of_purchase-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Date of purchase"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_product_date_of_purchase"
+                    android:textColor="@color/whiteTransparentHalf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Product date of purchase" />
+            </LinearLayout>
+
+            <!--product_date_of_sale-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Product date of sale"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_product_date_of_sale"
+                    android:textColor="@color/whiteTransparentHalf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Product date of sale" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Enter Your key" />
+            <!--product_upi_id-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Payment Mode"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_product_upi_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/whiteTransparentHalf"
+                    android:padding="10dp"
+                    android:text="Upi Id" />
+            </LinearLayout>
+<!--            <EditText-->
+<!--                android:id="@+id/et_keyValue"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:background="@drawable/edit"-->
+<!--                android:hint="e.g 306"-->
+<!--                android:inputType="number"-->
+<!--                android:padding="10dp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btn_complete_transaction"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:background="@drawable/button"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="10dp"-->
+<!--                android:text="Complete the trsnsaction" />-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".SalesActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:padding="110dp"
+        android:src="@drawable/bg_three" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_empty_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold|italic"
+        android:text="Oops Nothing to show..!"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RVdashBoard"
+        android:layout_width="match_parent"
+        android:layout_height="643dp"
+        android:paddingBottom="50dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/btn_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button"
+            android:padding="10dp"
+            android:text="Sort"
+            android:textAllCaps="false" />
+
+
+        <Button
+            android:id="@+id/btn_purchased_products"
+            android:layout_width="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:padding="6dp"
+            android:text="Purchased products"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</RelativeLayout>

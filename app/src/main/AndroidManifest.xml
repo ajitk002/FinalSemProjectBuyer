@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.finalsemprojectbuyer">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AfterSale.Product_view_more"/>
+        <activity android:name=".blogapp.Blog_MainActivity" />
+        <activity android:name=".blogapp.Blog_NewPostActivity" />
+        <activity android:name=".blogapp.Blog_CommentsActivity" />
+        <activity android:name=".Notification.ReceiveNotificationActivity" />
+        <activity android:name=".AfterSale.ProductViewAfterSale"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name=".AfterSale.SoldProducts" />
+        <activity android:name=".BeforeSale.ProductViewBeforeSale" />
+        <activity android:name=".BeforeSale.NewProductForSale" />
+        <activity android:name=".Chat.ChatActivity" />
+        <activity android:name=".Chat.ChatHomeActivity" />
+        <activity android:name=".Chat.MessageActivity" />
+        <activity android:name=".LoginActivitys.PasswordResetEmail" />
+        <activity android:name=".LoginActivitys.ProfileActivity" />
+        <activity android:name=".LoginActivitys.RegistrationActivity" />
+        <activity android:name=".LoginActivitys.Reg" />
+        <activity android:name=".LoginActivitys.UpdatePassWord" />
+        <activity android:name=".LoginActivitys.UpdateUserProfile" />
+        <activity android:name=".SalesActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".others.PdfBill" />
+        <activity android:name=".Center" />
+        <activity android:name=".PymentActivity" />
+        <activity android:name=".MainActivity" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_launcher_background" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <activity android:name=".LoginActivitys.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Notification.MyFirebaseService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Notification.MyFireBaseMessaging"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

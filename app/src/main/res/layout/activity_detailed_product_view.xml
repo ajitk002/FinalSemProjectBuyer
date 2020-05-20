@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navy_blue"
+    tools:context=".BeforeSale.ProductViewBeforeSale">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/ivDPVproductImage"
+                android:layout_width="366dp"
+                android:layout_height="207dp"
+                android:src="@drawable/common_google_signin_btn_text_light_normal"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_image_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Product Name"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tvDPVname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Redmi 4"
+                    android:textColor="#64DD17"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Product Categories"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tvDPVcategories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="TextView"
+                    android:textColor="#64DD17"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Description"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tvDPVproductDetails"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/whiteTransparentHalf"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="its a very good product please consider this for your next purchase"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Company"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tvDPVcompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Samsung"
+                    android:textColor="#64DD17"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Usgeage Duration"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tvDPVnameDateOfPurchase"
+                    android:textColor="@color/whiteTransparentHalf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="less than 6 month" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Product Condition"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tvDPVproductCondition"
+                    android:textColor="@color/whiteTransparentHalf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Very good" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Product Price"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tvDPVprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="600 Rs"
+                    android:textColor="#FFD600" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_Pick_up_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Select Pick Update"
+                android:visibility="visible" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="Pick up date *"/>
+            <Button
+                android:id="@+id/btnDPVBuy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:padding="10dp"
+                android:text="Buy"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".BeforeSale.ProductViewBeforeSale">-->
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:padding="10dp">-->
+<!--        <LinearLayout-->
+<!--            android:gravity="center"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            android:padding="10dp">-->
+<!--            <ImageView-->
+<!--                android:id="@+id/ivDPVproductImage"-->
+<!--                android:layout_width="156dp"-->
+<!--                android:layout_height="168dp"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvDPVname"-->
+<!--                android:layout_width="109dp"-->
+<!--                android:layout_height="17dp"-->
+<!--                android:layout_marginTop="36dp"-->
+<!--                android:text="TextView"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvDPVcategories"-->
+<!--                android:layout_width="109dp"-->
+<!--                android:layout_height="15dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:text="TextView"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvDPVproductDetails"-->
+<!--                android:layout_width="110dp"-->
+<!--                android:layout_height="19dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:text="TextView"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvDPVcompany"-->
+<!--                android:layout_width="112dp"-->
+<!--                android:layout_height="22dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:text="TextView"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvDPVnameDateOfPurchase"-->
+<!--                android:layout_width="109dp"-->
+<!--                android:layout_height="21dp"-->
+<!--                android:text="TextView"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvDPVproductCondition"-->
+<!--                android:layout_width="103dp"-->
+<!--                android:layout_height="21dp"-->
+<!--                android:text="TextView"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvDPVprice"-->
+<!--                android:layout_width="107dp"-->
+<!--                android:layout_height="21dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:text="TextView" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_Pick_up_date"-->
+<!--                android:padding="10dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:text="Select Pick Update"/>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnDPVBuy"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Buy"-->
+<!--                />-->
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+
+
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

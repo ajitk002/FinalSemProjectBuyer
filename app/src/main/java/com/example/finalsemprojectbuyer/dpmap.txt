@@ -1,0 +1,51 @@
+User Database:
+	Name
+	Email
+	Phone Number
+	Password
+	Profile Pic Location
+	User ID
+
+Chat Database:
+	Message Sender ID
+	Message Receiver ID
+	Message ID
+	Product ID
+
+Product Database:
+	Product ID
+	Seller ID
+	Product Name
+	Product Condition
+	Date of Purchase
+	Product Company
+	Product Category
+	Product Details
+	Address
+	Payment Type
+	Longitude
+	Latitude
+	Product Price
+	Key
+	Date Of sale
+	Date of Purchase
+	Pick Up Date
+	Buyer ID
+
+Product Database:
+	Product ID
+	Seller ID
+	Product Name
+	Product Condition
+	Date of Purchase
+	Product Company
+	Product Category
+	Product Details
+	Name
+	Address
+	Payment Type
+	Longitude
+	Latitude
+	Key
+	Date Of sale
+	Product Price

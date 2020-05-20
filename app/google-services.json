@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "917435680021",
+    "firebase_url": "https://finalsemprojectseller.firebaseio.com",
+    "project_id": "finalsemprojectseller",
+    "storage_bucket": "finalsemprojectseller.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917435680021:android:7b15f166f5122f328d151c",
+        "android_client_info": {
+          "package_name": "com.example.finalsemproject_buyer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917435680021-6s0qri23q4o0vf317pe4q30fp6srs73p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR36yo3wJFnZQHlNGyDkKfu_us3mh8ntk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917435680021-6s0qri23q4o0vf317pe4q30fp6srs73p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917435680021:android:6537c51bd37b67628d151c",
+        "android_client_info": {
+          "package_name": "com.example.finalsemproject_seller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917435680021-6s0qri23q4o0vf317pe4q30fp6srs73p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR36yo3wJFnZQHlNGyDkKfu_us3mh8ntk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917435680021-6s0qri23q4o0vf317pe4q30fp6srs73p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917435680021:android:cee21c590861230e8d151c",
+        "android_client_info": {
+          "package_name": "com.example.finalsemprojectbuyer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917435680021-6s0qri23q4o0vf317pe4q30fp6srs73p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR36yo3wJFnZQHlNGyDkKfu_us3mh8ntk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917435680021-6s0qri23q4o0vf317pe4q30fp6srs73p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

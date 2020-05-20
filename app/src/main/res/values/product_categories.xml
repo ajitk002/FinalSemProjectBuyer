@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="product_categories">
+        <item>TV</item>
+        <item>Mobile</item>
+        <item>Camera</item>
+        <item>Spare part</item>
+        <item>mixer</item>
+        <item>Grinder</item>
+        <item>UnKnown</item>
+    </string-array>
+
+    <string-array name="duration_of_useage">
+        <item>less then six month</item>
+        <item>in between 6 month to one year</item>
+        <item>in between 1 year to 2 year</item>
+        <item>More then 2 year </item>
+    </string-array>
+
+    <string-array name="product_condition">
+        <item>Poor</item>
+        <item>OK</item>
+        <item>good</item>
+        <item>very good</item>
+        <item>non recognisable</item>
+    </string-array>
+
+    <string-array name="product_company">
+        <item>Redmi</item>
+        <item>Samsung</item>
+        <item>lava</item>
+        <item>micromax</item>
+        <item>huwai</item>
+        <item>honor</item>
+        <item>UnKnown</item>
+    </string-array>
+
+</resources>

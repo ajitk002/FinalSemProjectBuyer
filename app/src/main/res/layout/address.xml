@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+   >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:text="Address  "
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+            <!--    Address Line one        -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:shadowColor="#3D5AFE"
+                android:text="Address Line 1"
+                android:textColor="#651FFF" />
+
+            <EditText
+                android:id="@+id/etAddressLineOne"
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                android:background="@drawable/textview_name"
+                android:ems="10"
+                android:maxLength="15"
+                android:maxLines="5"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/etAddressLineOneError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="..."
+                android:textColor="#FFD600" />
+
+            <!--    Address Line two        -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:shadowColor="#3D5AFE"
+                android:text="Address Line 2"
+                android:textColor="#651FFF" />
+
+            <EditText
+                android:id="@+id/etAddressLineTwo"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:background="@drawable/textview_name"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:maxLength="15"
+                android:maxLines="5"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/etAddressLineTwoError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="..."
+                android:textColor="#FFD600" />
+
+            <!--    Address Line city/district        -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:shadowColor="#3D5AFE"
+                android:text="City/district"
+                android:textColor="#651FFF" />
+
+            <EditText
+                android:id="@+id/etCityOrDistrict"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_name"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/etCityOrDistrictError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="..."
+                android:textColor="#FFD600" />
+
+            <!--    Address Line state/ province        -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:shadowColor="#3D5AFE"
+                android:text="State/Province"
+                android:textColor="#651FFF" />
+
+            <EditText
+                android:id="@+id/etStateOrProvince"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_name"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/etStateOrProvinceError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="..."
+                android:textColor="#FFD600" />
+
+            <!--    Address Line Postal code        -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:shadowColor="#3D5AFE"
+                android:text="Postal Code"
+                android:textColor="#651FFF" />
+
+            <EditText
+                android:id="@+id/etPostalCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_name"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/etPostalCodeError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="..."
+                android:textColor="#FFD600" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/primary_button"
+                android:text="Submit" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/secondary_button"
+                android:text="Cancel" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

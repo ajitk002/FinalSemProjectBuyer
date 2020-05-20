@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string android:name="select">select item</string>
+    <string-array android:name="condition_array">
+        <item android:title="Very good">Very good</item>
+        <item android:title="good">good</item>
+        <item android:title="bad">bad</item>
+        <item android:title="very bad">very bad</item>
+    </string-array>
+</resources>
