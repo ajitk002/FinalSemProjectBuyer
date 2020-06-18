@@ -64,6 +64,8 @@ public class ProductViewBeforeSale extends AppCompatActivity implements DatePick
     ImageView ivDPVproductImage;
     boolean isPickupDateSelected = false;
     Button btnBuy;
+
+
     String product_date_of_purchase;
     String BuyingProductID;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
